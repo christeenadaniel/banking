@@ -1,0 +1,119 @@
+<div class="main_box">
+
+    <div class="sidebar_menu">
+        <div class="text-center text-info heading">
+            <h2 >Services</h2>
+        </div>
+        <div class="btn_two">
+            <label for="check">
+                <i class="fas fa-times"></i>
+            </label>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><i class="fa-solid fa-address-card"></i>
+                    <a data-bs-toggle="modal" data-bs-target="#exampleModal1" href="">View Profile</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-money-bill-1-wave"></i>
+                    <a data-bs-toggle="modal" data-bs-target="#exampleModal" href="">Balance Enquiry</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-sack-dollar"></i>
+                    <a data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"
+                        href="">Money Transfer</a>
+                </li>
+                <li>
+                    <i class="fa-sharp fa-solid fa-money-check-dollar"></i>
+                    <a href="">Account Statement</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-user-minus"></i>
+                    <a href="">Delete Account</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <a href="">Logout</a>
+                </li>
+
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- Balance Enquiry -->
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-secondary">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Current Balance</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body bg-dark text-white text-center">
+                <img src="https://i.postimg.cc/rwWVm3hq/balance1.png">
+                <h4>Hai Manu</h4>
+                <p>Your Account No. : </p>
+                <p>Your available balance : Rs.<span class="text-info">0/-</span></p>
+            </div>
+            <div class="modal-footer bg-dark">
+                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- profile username,acno,img -->
+<!-- Modal -->
+<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-secondary">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Your Profile</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body bg-dark text-center">
+                <img src="https://i.postimg.cc/8PyJb3WR/profile.png">
+                <div class="row">
+                    <div class="col-6  text-info">
+                        <h5>User Name</h5>
+                        <h5>Account Number</h5>
+                    </div>
+                    <div class="col-6 text-info">
+                        <h5>ghjghg</h5>
+                        <h5>1101001</h5>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer bg-dark">
+                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- money transfer (recipient acno,amount to transfer,password)-->
+<!-- offcanvas -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header bg-dark-subtle text-emphasis-dark">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Money Transfer</h5>
+        <button type="button" class="btn-close btn-outl" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+
+    <div class="offcanvas-body  bg-dark text-white">
+        <img src="https://i.postimg.cc/tgJLx1bd/money1.png">
+        <form action="" class="p-3">
+            <input class="form-control mt-4" type="text" placeholder="Recipient Account Number"
+                aria-label="default input example">
+            <input class="form-control mt-4" type="text" placeholder="Amount To Transfer"
+                aria-label="default input example">
+            <input class="form-control mt-4" type="text" placeholder="Password" aria-label="default input example">
+            <button class="btn btn-outline-info mt-4">Send Money</button>
+        </form>
+
+    </div>
+</div>

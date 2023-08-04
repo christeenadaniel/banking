@@ -1,0 +1,33 @@
+.container-footer {
+    height: 50px;
+    width: 100%;
+    background-color: #011b33;
+    position: fixed;
+    bottom: 0;
+   
+}
+
+p {
+    color: white;
+    font-size: 10px;
+    padding-top: 1px;
+    padding-left: 16px;
+}
+
+#copyright {
+    text-align: center;
+}
+
+h5{
+    color: white;
+    padding-top: 5px;
+    padding-left: 16px;
+}
+@media screen and (max-width:767px){
+    p{
+        text-align: center;
+    }
+    h3{
+        text-align: center;
+    }
+}

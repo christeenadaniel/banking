@@ -1,0 +1,45 @@
+<!-- login -->
+<div class="container w-100 text-center m-3 p-3">
+    <div class="row text-center">
+        <div class="col md-4"></div>
+        <div class="col md-4 text-center">
+            <div class="wrapper ">
+                <form action="">
+                    <h1>Login</h1>
+                    <div class="input-box">
+                        <input (change)="unameChange($event)" type="text" id="uname" name="uname" [placeholder]="UserName" 
+                            required>
+
+                        <!-- <input type="text" id="uname" name="uname" placeholder="UserName" required> -->
+                        <i class='bx bxs-user'></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="password" id="password" name="password" [placeholder]="Password" 
+                         (change)="pwdChange($event)" required>
+
+                        <!-- <input type="password" id="password" name="password" placeholder="Password" required> -->
+                        <i class='bx bxs-lock-alt'></i>
+                    </div>
+                    <div class="remember-forgot">
+                        <label for="">
+                            <input type="checkbox">Remember Me
+                        </label>
+                        <a href="">Forgot Password?</a>
+                    </div>
+                    <button type="submit" id="loginbtn" class="btn" (click)="login()">LOGIN</button>
+                    <div class="register-link">
+                        <p>Dont have an account?<a href="">Create an account</a></p>
+                    </div>
+                </form>
+            </div>
+     
+        </div>
+        <div class="col md-4">
+            <h5 class="text-dark" id="data">{{dataString}}</h5>
+        </div>
+        <!-- <div class="col lg-6 ">
+            <img src="">
+        </div> -->
+
+    </div>
+</div>

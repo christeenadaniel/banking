@@ -1,0 +1,25 @@
+.container-header{
+    height: 50px;
+    background-color: #011b33;
+    /* position: fixed; */
+    width: 100%;
+    /* align-items: end; */
+
+}
+.container-header p{
+   text-align: right;
+    position: absolute;
+    right: 50px;
+}
+p{
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+    padding-top: 10px;
+}
+@media screen and (max-width:767px) {
+    .container-header p{
+    text-align: center;
+    }
+    
+}
