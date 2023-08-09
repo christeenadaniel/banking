@@ -7,16 +7,19 @@
                 <form action="">
                     <h1>Login</h1>
                     <div class="input-box">
-                        <input (change)="unameChange($event)" type="text" id="uname" name="uname" [placeholder]="UserName" 
-                            required>
+                        <input  #username type="text" id="uname" name="uname" [placeholder]="UserName" 
+                        required>
+                        <!-- <input (change)="unameChange($event)" type="text" id="uname" name="uname" [placeholder]="UserName" 
+                            required> -->
 
                         <!-- <input type="text" id="uname" name="uname" placeholder="UserName" required> -->
                         <i class='bx bxs-user'></i>
                     </div>
                     <div class="input-box">
-                        <input type="password" id="password" name="password" [placeholder]="Password" 
-                         (change)="pwdChange($event)" required>
-
+                        <input #pwd type="password" id="password" name="password" [placeholder]="Password" 
+                         required>
+                         <!-- <input type="password" id="password" name="password" [placeholder]="Password" 
+                         (change)="pwdChange($event)" required> -->
                         <!-- <input type="password" id="password" name="password" placeholder="Password" required> -->
                         <i class='bx bxs-lock-alt'></i>
                     </div>
@@ -26,7 +29,9 @@
                         </label>
                         <a href="">Forgot Password?</a>
                     </div>
-                    <button type="submit" id="loginbtn" class="btn" (click)="login()">LOGIN</button>
+                    <button type="button" id="loginbtn" class="btn" (click)="login(username,pwd)">LOGIN</button>
+
+                    <!-- <button type="submit" id="loginbtn" class="btn" (click)="login()">LOGIN</button> -->
                     <div class="register-link">
                         <p>Dont have an account?<a href="">Create an account</a></p>
                     </div>

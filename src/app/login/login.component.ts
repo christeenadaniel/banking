@@ -11,17 +11,22 @@ export class LoginComponent {
   UserName  = "Username"
   Password = "Password"
 
-  login(){
-    alert("Login button clicked")
-  }
+  // login(){
+  //   alert("Login button clicked")
+  // }
 
-  unameChange(event:any){
-    console.log(event.target.value);
+  // unameChange(event:any){
+  //   console.log(event.target.value);
+    
+  // }
+  // pwdChange(event:any){
+  //   console.log(event.target.value);
+    
+  // }
+  login(a : any,b : any){
+    console.log(a.value);
+    console.log(b.value);
+    
     
   }
-  pwdChange(event:any){
-    console.log(event.target.value);
-    
-  }
-
 }
